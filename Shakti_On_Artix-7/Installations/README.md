@@ -1,7 +1,7 @@
 ## Installations:
 
 ### Installing WSL 2(Optional):
-- ***Note: If you already have Ubuntu OS, then skip this step and directly proceed to ['Installing Bluespec Compiler'](https://github.com/ppattanaik/SwadeshiMicroprocessorChallenge/blob/main/Installations/README.md#installing-bluespec-compiler)***
+- ***Note: If you already have Ubuntu OS, then skip this step and directly proceed to ['Installing Bluespec Compiler'](https://github.com/ppattanaik/RISC-V_Projects/tree/main/Shakti_On_Artix-7/Installations#installing-bluespec-compiler)***
 
 Open Windows powershell as administrator and execute the following commands:
 
@@ -59,7 +59,7 @@ To switch  `Ubuntu`  to WSL2, enter:
 ```
 wsl --set-version Ubuntu 2
 ```
-### [](https://github.com/ppattanaik/SwadeshiMicroprocessorChallenge/blob/main/Installations/README.md#installing-bluespec-compiler)Installing Bluespec Compiler
+### [](https://github.com/ppattanaik/RISC-V_Projects/tree/main/Shakti_On_Artix-7/Installations#installing-bluespec-compiler)Installing Bluespec Compiler
 - ***Installing software dependaencies***
 
 Ensure a stable internet connection (Use unprotected networks, preferably Mobile Hotspots).
@@ -152,7 +152,7 @@ cd
 ```
 sudo apt-get install python-serial
 ```
-### [](https://github.com/ppattanaik/SwadeshiMicroprocessorChallenge/blob/main/Installations/README.md#installation-of-risc-v-openocd)Installation of RISC-V OpenOCD
+### [](https://github.com/ppattanaik/RISC-V_Projects/tree/main/Shakti_On_Artix-7/Installations#installation-of-risc-v-openocd)Installation of RISC-V OpenOCD
 
 Move to the Home folder and run the following commands:
 
@@ -175,7 +175,7 @@ cd riscv-openocd
 + libtoolize --automake --copy
 libtoolize: $pkgltdldir is not a directory: `/mingw/share/libtool'
 ```
-##### ***> If this error is obtained, do not proceed forward. Insted, proceed with ['Setting up the SHAKTI - SDK'](https://github.com/ppattanaik/SwadeshiMicroprocessorChallenge/blob/main/Installations/README.md#setting-up-the-shakti-sdk) then return to the ['Installation of RISCV - OpenOCD'](https://github.com/ppattanaik/SwadeshiMicroprocessorChallenge/blob/main/Installations/README.md#installation-of-risc-v-openocd).***
+##### ***> If this error is obtained, do not proceed forward. Insted, proceed with ['Setting up the SHAKTI - SDK'](https://github.com/ppattanaik/RISC-V_Projects/tree/main/Shakti_On_Artix-7/Installations#setting-up-the-shakti-sdk) then return to the ['Installation of RISCV - OpenOCD'](https://github.com/ppattanaik/RISC-V_Projects/tree/main/Shakti_On_Artix-7/Installations#installation-of-risc-v-openocd).***
 
 - ***Building the OpenOCD toolchain***
 Move to the 'RISCV-OpenOCD' directory and run the following commands:
@@ -209,7 +209,7 @@ which openocd
 ### Programming E-arty35t RTL bitstream onto the FPGA 
 Pending.
 
-### [](https://github.com/ppattanaik/SwadeshiMicroprocessorChallenge/blob/main/Installations/README.md#setting-up-the-shakti-sdk)Setting up the SHAKTI-SDK
+### [](https://github.com/ppattanaik/RISC-V_Projects/tree/main/Shakti_On_Artix-7/Installations#setting-up-the-shakti-sdk)Setting up the SHAKTI-SDK
 - ***Pre-requisites***
 
 To solve the software dependencies, move to the home directory and run the following commands:
