@@ -69,6 +69,32 @@ pipeline.
 		 
 	```sudo make``` // installation starts from here
 	
+	- Ensure the ​ riscv32-unknown-elf-gcc ​ and other riscv32-unknown binaries are created in the ​ /home/username/Desktop/pulptoolchain/bin ​ folder.
+	- Further ensure that the command below should give its path in the terminal.
+	
+	``` which riscv32-unknown-elf-gcc``` ​ 
+	
+	##### ***> If the above command do not give any output in the terminal then provide its path in the .bashrc as well as the environment file and re-execute the command***
+	
+	- Now, move to RISC-V folder and clone the ​ pulpino platform​ git db by executing below command
+	
+	```git clone ​https://github.com/pulp-platform/pulpino```
+	
+	##### ***> Copying the above command may cause the following error***
+	
+	```fatal: protocol '​https' is not supported```
+	
+	##### ***//Manually type the command to avoid this error***
+	
+	- Ensure that python2 is the default python or python2 is the only python in your PC.
+	- To install python 2 execute the following command:
+	
+	```sudo apt install python```
+	
+	- Check the version by typing the following command:
+	
+	```python --version```
+	
 	
 	
 	
