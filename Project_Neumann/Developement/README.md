@@ -62,9 +62,11 @@ pipeline.
 	```cd pulp-riscv-gnu-toolchain```
 		
 	```
-	./configure --prefix=​ /home/​vlsi_lab​/Desktop/project_neumann/pulptoolchain --with-arch=rv32imc --with-cmodel=medlow --enable-multilib
+	./configure --prefix=/home/vlsi_lab/Desktop/project_neumann/pulptoolchain --with-arch=rv32imc --with-cmodel=medlow --enable-multilib
 	```
 		
 	```make clean```
 		 
 	```sudo make``` // installation starts from here
+	
+## Troubleshooting
