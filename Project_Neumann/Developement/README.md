@@ -95,6 +95,68 @@ pipeline.
 	
 	```python --version```
 	
+	- Install pip by executing the following command in the terminal;
+		##### ***(As Pip for Python 2 is not included in the Ubuntu 20.04 repositories. We’ll be installing pip for Python 2 using the `get-pip.py` script.)***
+		- Start by enabling the universe repository:
+		```sudo add-apt-repository universe```
+		- Update the packages index and install Python 2:
+		```sudo apt update```
+		```sudo apt install python2``` (Ignore this step if Python2 is already installed)
+		- Use [`curl`](https://linuxize.com/post/curl-command-examples/) to download the `get-pip.py` script:
+		```curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py```
+		- Once the repository is enabled, run the script as sudo user with `python2` to install pip for Python 2:
+		```sudo python2 get-pip.py```
+		- Check whether pip is successfully installed or not
+		```pip --version ```
+		```
+		Output
+		pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
+		```
+	- Install yaml program by using ​ the following command:
+	```pip install pyyaml​``` 
+	(Copying the following command may cause error. To 	avoid it manually type this command)
+	- Go to ​ pulpino​ directory and run the update-ips.py using the​ command:
+	```./​update-ips.py``` 
+	//this should successfully run without any error and various IP databases should be in the current directory
+	- Go to ​ sw​ folder and create a folder named build
+	```mkdir build```
+	- Move to the build directory and copy the cmake_configure.zeroriscy.gcc.sh​ script file from ​ sw​ folder to it
+	```cd ​ build​```
+	```cp ​ ../cmake_configure.zeroriscy.gcc.sh .```
+	- Edit the above cmake script file and save it:
+		``` vim cmake_configure.zeroriscy.gcc.sh```
+		- Find and remove the ​ -m32​ flag (Probably present in the 13th line)
+		- Make ​ZERO_RV32M=0 (Probably present in the 26th line)
+		- Modify ​RV32IM​ to ​ rv32IM (Probably present in the 31st line)
+		- Save the file
+	- Open the ​ CMakeLists.txt​ file in the ​ sw​ folder and remove the ​ -m32​ flag in the 54th line or wherever you find it.
+	-  Go to the ​ build​ folder and execute the cmake script
+```./​cmake_configure_riscv.gcc.sh​``` (Errors may pop up)
+	- Copy the ​ riscv.ld​ file from pulp-gnu-toolchain to build/CMakeFiles/CMakeTmp
+directory.
+	- Execute this command:
+	```
+	riscv32-unknown-elf-ld --verbose | head -n -1 | tail -n +7 | sed '168 a \ \_fbss = .;' | sed '169 a \ \ . = .;' > /home/vlsi_lab/Desktop/project_neumann/RISC-V/pulpino/sw/build/CMakeFiles/CMakeTmp/riscv.ld
+	```
+	- Run cmake script file ​ cmake_configure_riscv.gcc.sh​ ​ again by using
+```./​cmake_configure_riscv.gcc.sh```
+	- Repeat the previous 3 commands again.
+	- It should run successfully and gives you below output:
+	```
+	vlsi_lab@vlsi-lab:~/Desktop/project_neumann/RISC-V/pulpino/sw/build$./cmake_configure.zeroriscy.gcc.sh 
+	System is unknown to cmake, create:
+	Platform/Linux-CXX to use this system, please post your config file on discourse.cmake.org so it can be added to cmake
+	Your CMakeCache.txt file was copied to CopyOfCMakeCache.txt. Please post that file on discourse.cmake.org.
+	-- GCC_MARCH= rv32IM
+	-- USE_ZERO_RISCY= 1
+	-- RISCY_RV32F= 0
+	-- ZERO_RV32M= 0
+	-- ZERO_RV32E= 0
+	-- PL_NETLIST= 
+	-- Configuring done
+	-- Generating done
+	-- Build files have been written to: /home/vlsi_lab/Desktop/project_neumann/RISC-V/pulpino/sw/build
+	```
 	
 	
 	
