@@ -99,7 +99,7 @@ pipeline.
 		##### ***(As Pip for Python 2 is not included in the Ubuntu 20.04 repositories. We’ll be installing pip for Python 2 using the `get-pip.py` script.)***
 		- Start by enabling the universe repository:
 		
-		```sudo add-apt-repository universe```
+	 	```sudo add-apt-repository universe```
 		
 		- Update the packages index and install Python 2:
 		
@@ -157,7 +157,7 @@ pipeline.
 	
 	-  Go to the ​ build​ folder and execute the cmake script
 
-```./​cmake_configure_riscv.gcc.sh​``` (Errors may pop up)
+	```./​cmake_configure_riscv.gcc.sh​``` (Errors may pop up)
 
 	- Copy the ​ riscv.ld​ file from pulp-gnu-toolchain to build/CMakeFiles/CMakeTmp directory.
 	- Execute this command:
