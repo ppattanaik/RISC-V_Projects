@@ -188,7 +188,3 @@ pipeline.
 	-- Generating done
 	-- Build files have been written to: /home/vlsi_lab/Desktop/project_neumann/RISC-V/pulpino/sw/build
 	```
-	
-	
-	
-## Troubleshooting
