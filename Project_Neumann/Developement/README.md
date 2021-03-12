@@ -7,6 +7,8 @@ developed at ETH Zurich. PULPino is configured to use either the RISCY or the ze
 RISCY is an in-order, single-issue core with 4 pipeline stages whereas zero-riscy core with 2 stage
 pipeline.
 
+
+
  - #### ***Setting up the PULP Platform :***
 	 -  Download and install [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64)
 	 -  Open terminal and execute the following commands:
