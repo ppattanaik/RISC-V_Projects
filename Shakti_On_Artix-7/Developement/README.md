@@ -1,4 +1,4 @@
-## Installations:
+## Setting up the Platform:
 
 ### Installing WSL 2(Optional):
 - ***Note: If you already have Ubuntu OS, then skip this step and directly proceed to ['Installing Bluespec Compiler'](https://github.com/ppattanaik/RISC-V_Projects/tree/main/Shakti_On_Artix-7/Installations#installing-bluespec-compiler)***
